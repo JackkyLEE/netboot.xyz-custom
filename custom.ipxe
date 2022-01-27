@@ -44,7 +44,7 @@ boot || goto custom_exit
 
 :option_sev
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd http://10.2.2.204/b/Windows.iso
+initrd http://10.2.2.204/b/acronis33.iso
 boot || goto custom_exit
 
 :option_three
