@@ -14,7 +14,7 @@ item option_three ${space} Loads another custom sub menu
 item option_four ${space} This is option four
 item option_five ${space} Load over ISO
 item option_six ${space} Ubuntu 18
-item option_sev ${space} Win10 Setup
+item option_sev ${space} Knoppix
 
 choose custom_choice || goto custom_exit
 echo ${cls}
@@ -44,7 +44,7 @@ boot || goto custom_exit
 
 :option_sev
 kernel https://boot.netboot.xyz/memdisk raw iso
-initrd http://10.2.2.204/b/acronis33.iso
+initrd http://10.2.2.204/b/knoppix.iso
 boot || goto custom_exit
 
 :option_three
