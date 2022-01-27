@@ -13,7 +13,7 @@ item --gap This is a second sub menu
 item option_three ${space} Loads another custom sub menu
 item option_four ${space} This is option four
 item option_five ${space} Load over ISO
-item option_6 ${space} Ubuntu 18
+item option_six ${space} Ubuntu 18
 choose custom_choice || goto custom_exit
 echo ${cls}
 goto ${custom_choice}
@@ -35,7 +35,7 @@ kernel https://boot.netboot.xyz/memdisk raw iso
 initrd http://10.2.2.204/ubuntu.iso
 boot || goto custom_exit
 
-:option_6
+:option_six
 kernel https://boot.netboot.xyz/memdisk raw iso
 initrd http://10.2.2.204/ubuntu18.iso
 boot || goto custom_exit
