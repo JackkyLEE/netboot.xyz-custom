@@ -12,7 +12,7 @@ item option_two ${space} Loading an ISO
 item --gap This is a second sub menu
 item option_three ${space} Loads another custom sub menu
 item option_four ${space} This is option four
-item option_five ${space} Load ISO
+item option_five ${space} Load over ISO
 choose custom_choice || goto custom_exit
 echo ${cls}
 goto ${custom_choice}
