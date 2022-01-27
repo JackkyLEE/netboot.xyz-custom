@@ -12,6 +12,7 @@ item option_two ${space} Loading an ISO
 item --gap This is a second sub menu
 item option_three ${space} Loads another custom sub menu
 item option_four ${space} This is option four
+item option_five ${space} Load ISO
 choose custom_choice || goto custom_exit
 echo ${cls}
 goto ${custom_choice}
@@ -26,6 +27,11 @@ boot || goto custom_exit
 :option_two
 kernel https://boot.netboot.xyz/memdisk raw iso
 initrd http://10.2.2.204/WIN_10_11_PEx64.iso
+boot || goto custom_exit
+
+:option_two
+kernel https://boot.netboot.xyz/memdisk raw iso
+initrd http://10.2.2.204/ubuntu.iso
 boot || goto custom_exit
 
 :option_three
