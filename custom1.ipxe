@@ -1,0 +1,1 @@
+chain http://preseed.panticz.de/\${mac}
