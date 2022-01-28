@@ -1,1 +1,3 @@
-chain http://preseed.panticz.de/\${mac}
+#!ipxe
+ 
+dhcp && chain http://\${next-server}/\${mac} || chain http://preseed.panticz.de/\${mac}
